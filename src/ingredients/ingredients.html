@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MealCraft | Ingredients</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/ingredients.js" type="module"></script>
 </head>
 <body>
     <header class="divider" id="main-header"></header>
     <main class="divider">
-        <h2 id="ingredient-header">Ingredients</h2>
-        <label for="ingredient-search">Search Ingredient List</label>
-        <input type="search" id="ingredient-search" name="ingredient-search">
-        <div id="ingredient-gallery"></div>
+        <div id="search-box">
+            <label for="ingredient-search">Search Ingredient List</label>
+            <input type="text" id="ingredient-search" name="ingredient-search" placeholder="Search for a food...">
+        </div>
+        <div id="results"></div>
+        <div id="nutrition-modal" class="modal">
+            <div class="modal-content">
+                <span id="modal-close">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
     </main>
     <footer class="divider" id="main-footer"></footer>
 </body>

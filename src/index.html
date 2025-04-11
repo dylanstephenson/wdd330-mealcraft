@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MealCraft | Home</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/main.js" type="module"></script>
 </head>
 <body>
     <header class="divider" id="main-header"></header>
@@ -15,20 +16,22 @@
                 <li>Browse premade healthy meals with nutrition details included and save to meal calendar.</li>
                 <li>Search ingredient list and specific nutrition details.</li>
                 <li>Create and save custom meals and add to meal calendar</li>
-                <li id="register-button"><a href="account/account.html">Register Now</a></li>
+                <li id="register-list-item"><a id="register-button" href="account/account.html">Register Now</a></li>
             </ul>
             <figure id="hero-img">
-                <img>
+                <img src="images/veggie-rice.jpg" alt="veggie rice bowl" width="450px">
             </figure>
         </div>
-        <div id="recipe-carousel">
-            <h2>Recipe Carousel</h2>
-        </div>
-        <div id="meal-diagram">
-            <h2>Custom Meal Diagram</h2>
-            <figure>
-                <img>
-            </figure>
+        <div id="bottom-half-main">
+            <div id="recipe-carousel">
+                <h2>Recipe Carousel</h2>
+            </div>
+            <div id="meal-diagram">
+                <h2>Custom Meal Diagram</h2>
+                <figure id="diagramImg">
+                    <a href="/src/mealbuilder/mealbuilder.html"><img src="images/meal-diagram.png" alt="meal diagram" width="350px"></a>
+                </figure>
+            </div>
         </div>
     </main>
     <footer id="main-footer"></footer>
