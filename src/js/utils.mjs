@@ -46,10 +46,20 @@ function updateAuthStatus() {
   const isLoggedIn = localStorage.getItem('isLoggedIn'); // Or use a cookie, localStorage, or session variable
 
   if (isLoggedIn === 'true') {
-    // User is logged in, show "Account | Log Out"
-    authStatusDiv.innerHTML = `<a href="/account/account.html">Account</a> | <a href="/logout" onclick="logout()">Log Out</a>`;
+    authStatusDiv.innerHTML = `
+      <a href="/account/account.html">Account</a> | 
+      <a href="#" id="logout-link">Log Out</a>
+    `;
+
+    // Now attach the logout event handler
+    const logoutLink = document.getElementById("logout-link");
+    if (logoutLink) {
+      logoutLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        logout();
+      });
+    }
   } else {
-    // User is not logged in, show "Log In"
     authStatusDiv.innerHTML = `<a href="/login/login.html">Log In</a>`;
   }
 }
@@ -57,6 +67,9 @@ function updateAuthStatus() {
 // Logout function (this could be a form submission or a redirect, depending on your setup)
 function logout() {
   localStorage.setItem('isLoggedIn', 'false');
-  updateAuthStatus(); // Re-run the update function after logging out
+  updateAuthStatus();
+
+  // Optionally redirect after logout
+  window.location.href = "/login/login.html";
 }
 

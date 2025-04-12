@@ -11,21 +11,23 @@
     <header class="divider" id="main-header"></header>
     <main class="divider">
         <h2 id="login-header">Login/Register</h2>
-        <form id="login-form">
-            <label for="title">Sign In</label>
-            <input type="text" id="login-email" name="login-email" placeholder="Email">
-            <input type="text" id="login-password" name="login-password" placeholder="Password">
-            <input type="submit" id="submit" value="Log In">
-        </form>
-        <div id="divider"></div>
-        <form id="register-form">
-            <label for="register-title">Register Account</label>
-            <input type="text" id="account_firstname" name="account_firstname" placeholder="First Name">
-            <input type="text" id="account_lastname" name="account_lastname" placeholder="Last Name">
-            <input type="text" id="account_email" name="account-email" placeholder="Email">
-            <input type="text" id="account_password" name="account_password" placeholder="Password">
-            <input type="submit" value="Register">
-        </form>
+        <div id="login-page">
+            <form id="login-form">
+                <label id="login-title" for="login-title">Sign In</label>
+                <input type="text" id="login-email" name="login-email" placeholder="Email">
+                <input type="text" id="login-password" name="login-password" placeholder="Password">
+                <input type="submit" id="login-submit" value="Log In">
+            </form>
+            <div id="divider"></div>
+            <form id="register-form">
+                <label id="register-title" for="register-title">Register Account</label>
+                <input type="text" id="account_firstname" name="account_firstname" placeholder="First Name">
+                <input type="text" id="account_lastname" name="account_lastname" placeholder="Last Name">
+                <input type="text" id="account_email" name="account_email" placeholder="Email">
+                <input type="text" id="account_password" name="account_password" placeholder="Password">
+                <input type="submit" id="register-submit" value="Register">
+            </form>
+        </div>
     </main>
     <footer class="divider" id="main-footer"></footer>
 </body>

@@ -11,7 +11,17 @@
     <header class="divider" id="main-header"></header>
     <main class="divider">
         <h2 id="recipe-header">Recipe Gallery</h2>
-        <div id="recipe-gallery"></div>
+        <div id="recipe-container" class="recipe-grid"></div>
+        <div id="recipe-modal" class="modal hidden">
+            <div class="modal-content">
+              <span id="close-modal" class="close">&times;</span>
+              <h2 id="modal-title"></h2>
+              <h4>Ingredients</h4>
+              <ul id="modal-ingredients"></ul>
+              <h4>Cooking Steps</h4>
+              <div id="modal-steps"></div>
+            </div>
+          </div>
     </main>
     <footer class="divider" id="main-footer"></footer>
 </body>

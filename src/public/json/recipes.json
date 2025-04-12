@@ -1,62 +1,330 @@
 [
     {
         "recipeName": "Ground Turkey Fried Rice",
-        "recipeImg": "images/fried-rice.webp",
-        "cookingSteps": "https://www.delish.com/cooking/recipe-ideas/a54467/how-to-make-pork-fried-rice-recipe/"
+        "recipeImg": "/images/fried-rice.webp",
+        "cookingSteps":[ "<strong>Step 1: </strong>In a large skillet over medium heat, heat 1 Tbsp. vegetable oil. Add eggs and let sit for a few seconds before lightly scrambling and folding eggs over themselves, 45 seconds to 1 minute. Transfer to a plate.",
+        "<strong>Step 2: </strong>In same skillet over medium heat, heat remaining 1 Tbsp. vegetable oil. Cook onion and carrot, stirring occasionally, until vegetables are tender, about 7 minutes. Add pork; season with salt and pepper. Cook, breaking up with a spoon, until starting to caramelize, about 3 minutes. Stir in garlic, peas, and ginger and cook, stirring frequently, until fragrant, about 1 minute.",
+        "<strong>Step 3: </strong>Add rice, then stir in scallions, soy sauce, hoisin sauce, and sesame oil. Fold in scrambled eggs."
+    ],
+        "ingredients": [
+            "2 Tbsp. vegetable oil, divided",
+            "3 large eggs, beaten to blend",
+            "1/2 yellow onion, finely chopped",
+            "1 carrot, peeled, cut into 1/4inch pieces",
+            "1/2 lb. ground pork",
+            "Kosher salt",
+            "Freshly ground black pepper",
+            "2 garlic cloves, minced",
+            "1 cup frozen peas",
+            "1 Tbsp. finely grated peeled ginger",
+            "4 cups cooked white rice",
+            "3 scallions, thinly sliced",
+            "2 Tbsp. reduced-sodium soy sauce",
+            "1 Tbsp. hoisin sauce",
+            "1 tsp. toasted sesame oil"
+        ]
     },
     {
         "recipeName": "Pecan Chicken Strips and Dip",
-        "recipeImg": "images/chicken-tenders.webp",
-        "cookingSteps": "https://www.godairyfree.org/recipes/baked-pecan-crusted-chicken-strips"
+        "recipeImg": "/images/chicken-tenders.webp",
+        "cookingSteps": [
+            "<strong>Step 1: </strong>Preheat you oven to 425°F and line a baking sheet with parchment paper.",
+            "<strong>Step 2: </strong>In a food processor or spice grinder (in batch), pulse the pecans until they are relatively fine, like breadcrumbs.",
+            "<strong>Step 3: </strong>In a shallow bowl, whisk together the pecans, panko, garlic powder, 1 teaspoon salt, and cayenne.",
+            "<strong>Step 4: </strong>In a second shallow bowl, whisk together the flour, remaining ½ teaspoon salt, and black pepper.",
+            "<strong>Step 5: </strong>In a third shallow bowl, whisk the eggs until smooth.",
+            "<strong>Step 6: </strong>Working with one chicken tender at a time, roll it in the flour and tap off excess, dip it in the eggs, and then roll it in the pecan mixture. You can double roll and press it in to ensure it's completely coated. Set the chicken on your prepared baking sheet.",
+            "<strong>Step 7: </strong>Place the sheet on the center rack in your oven and bake the chicken for 15 minutes, flip, and bake for 5 minutes more, or until golden brown and cooked through."
+        ],
+        "ingredients": [
+            "2 cups raw pecan halves or pieces",
+            "1 cup panko or gluten-free bread crumbs",
+            "1 teaspoon garlic powder",
+            "1 teaspoon +1/2 teaspoon salt, divided",
+            "1/4 teaspoon cayenne pepper",
+            "1 cup all-purpose flour, whole wheat flour, or gluten-free flour blend",
+            "Black pepper, as desired",
+            "3 large eggs (see post above for egg-free option)",
+            "1 and 1/2 to 2 pounds chicken breast tenders or chicken strips"
+        ]
     },
     {
         "recipeName": "Instant Pot Jambalaya",
-        "recipeImg": "images/jumbalaya.webp",
-        "cookingSteps": "https://tastesbetterfromscratch.com/instant-pot-chicken-and-sausage-jambalaya/"
+        "recipeImg": "/images/jumbalaya.webp",
+        "cookingSteps": [
+            "<strong>Step 1: </strong>Turn instant pot to saute setting. Add oil. Once hot, add sausage slices, cooking until browned, about 2-3 minutes per side. Transfer to a paper towel-lined plate.",
+            "<strong>Step 2: </strong>Add remaining oil to the pot.",
+            "<strong>Step 3: </strong>Add the chicken and cook for one minute, scraping up the browned bits from the sausage. Turn instant pot off. Add onion, bell pepper, celery, and garlic and cook for one minute.",
+            "<strong>Step 4: </strong>Add the Cajun seasoning, dried basil, thyme, sugar and rice and stir to combine.",
+            "<strong>Step 5: </strong>Add the diced tomatoes and their juices, chicken broth, and salt.",
+            "<strong>Step 6: </strong>Secure the instant pot lid and turn valve to sealing.",
+            "<strong>Step 7: </strong>Cook on Manual High Pressure for 5 minutes. When the timer beeps, allow the pressure to naturally release for 5 minutes, and then quick release the remaining pressure.",
+            "<strong>Step 8: </strong>Carefully open the lid and gently fluff the rice with a fork. Add the sausages on top of the rice and return the IP lid to let the mixture rest for an additional 5 minutes. Stir lightly and enjoy!"
+        ],
+        "ingredients": [
+            "2 Tablespoons oil , divided",
+            "12 ounces andouille sausages cut into ¼ in. thick slices",
+            "1 boneless skinless chicken breasts cut into small pieces",
+            "1 yellow onion , chopped",
+            "1 green bell pepper , seeded and chopped",
+            "3 green onions , chopped",
+            "3 ribs celery , chopped",
+            "3 cloves garlic , minced",
+            "2 teaspoons Cajun seasonings",
+            "1 teaspoon dried basil",
+            "1/4 teaspoon dried thyme",
+            "1/2 teaspoon granulated sugar",
+            "1 1/2 cups long grain white rice",
+            "14.5 ounce can diced tomatoes , undrained",
+            "1 3/4 cups low-sodium chicken broth",
+            "1/2 teaspoon kosher salt"
+        ]
     },
     {
         "recipeName": "Chicken Hummus Wraps",
-        "recipeImg": "images/chicken-wraps.webp",
-        "cookingSteps": "https://www.ethanchlebowski.com/cooking-techniques-recipes/chicken-hummus-wrap"
+        "recipeImg": "/images/chicken-wraps.webp",
+        "cookingSteps": [
+            "<strong>Step 1: </strong>Thin out the chicken breasts to an even thickness. Then, grill or sear the butterflied (thinned out) chicken breasts in a hot pan until they reach 155°F internal temperature. Set aside to cool, then slice the chicken into long thin strips.",
+            "<strong>Step 2: </strong>Combine mayo, low-fat sour cream, za'atar, red pepper flakes, and lemon juice. Taste and adjust as needed.",
+            "<strong>Step 3: </strong>For each wrap, spread a large spoonful of hummus onto a flatbread. Then, add a serving of cooked chicken followed by layers of fresh toppings to taste. Drizzle with a spoonful of the za'atar white sauce before rolling it all up."
+        ],
+        "ingredients": [
+            "2lbs chicken breast",
+            "salt to taste",
+            "olive oil",
+            "1/2 cup mayo",
+            "1/2 cup sour cream",
+            "juice from 1/2 lemon",
+            "1tbsp za'atar",
+            "sprinkle of red pepper flakes",
+            "flatbread",
+            "hummus",
+            "pepperoncini peppers",
+            "lettuce",
+            "onion",
+            "cherry tomatoes"
+        ]
     },
     {
         "recipeName": "Lemon Chicken and Orzo",
-        "recipeImg": "images/chicken-orzo.webp",
-        "cookingSteps": "https://www.tasteofhome.com/recipes/lemon-chicken-with-orzo/"
+        "recipeImg": "/images/chicken-orzo.webp",
+        "cookingSteps": [
+            "<strong>Step 1: </strong>In a shallow bowl, mix flour and garlic powder. Cut chicken into 1-1/2-in. pieces; pound each with a meat mallet to 1/4-in. thickness. Sprinkle with 1/2 teaspoon salt and pepper. Dip both sides of chicken in flour mixture to coat lightly; shake off excess.",
+            "<strong>Step 2: </strong>In a large skillet, heat oil over medium heat. Add chicken; cook 3-4 minutes on each side or until golden brown and chicken is no longer pink. Remove from pan; keep warm. Wipe skillet clean.",
+            "<strong>Step 3: </strong>In same pan, bring broth to a boil; stir in orzo. Return to a boil. Reduce heat; simmer, covered, 8-10 minutes or until tender. Stir in spinach, tomatoes, lemon juice, basil and remaining salt; remove from heat. Return chicken to pan. If desired, serve with lemon wedges."
+        ],
+        "ingredients": [
+            "1/3 cup all-purpose flour",
+            "1 teaspoon garlic powder",
+            "1 pound boneless skinless chicken breasts",
+            "3/4 teaspoon salt, divided",
+            "1/2 teaspoon pepper",
+            "2 tablespoons olive oil",
+            "1 can (14-1/2 ounces) reduced-sodium chicken broth",
+            "1-1/4 cups uncooked whole wheat orzo pasta",
+            "2 cups chopped fresh spinach",
+            "1 cup grape tomatoes, halved",
+            "3 tablespoons lemon juice",
+            "2 tablespoons minced fresh basil",
+            "Lemon wedges, optional"
+        ]
     },
     {
         "recipeName": "Turkey Meatball Coconut Curry",
-        "recipeImg": "images/meatball-curry.webp",
-        "cookingSteps": "https://rachlmansfield.com/healthy-thai-turkey-meatballs-in-coconut-curry/#jump-to-recipe"
+        "recipeImg": "/images/meatball-curry.webp",
+        "cookingSteps": [
+            "<strong>Step 1: </strong>In a large bowl, combine the ground turkey, egg, cracker crumbs, garlic, ginger, coconut aminos, red curry paste and salt and pepper and mix well with a spatula or large fork until the ingredients are fully combined (make sure egg yolk is fully mixed in)",
+            "<strong>Step 2: </strong>Add the bowl to fridge to chill for about 15-30 minutes",
+            "<strong>Step 3: </strong>Preheat oven to 400 degrees and line a baking sheet with parchment paper",
+            "<strong>Step 4: </strong>Roll turkey mixture into about 1-inch balls and add to parchment paper",
+            "<strong>Step 5: </strong>Add to oven to bake for 18 minutes (or until the meatballs are cooked and not pink when you cut them open!)",
+            "<strong>Step 6: </strong>While the meatballs bake, make the coconut curry",
+            "<strong>Step 7: </strong>In a large skillet, warm oil, pepper and onions over medium heat and cook for about 5-7 minutes or until golden",
+            "<strong>Step 8: </strong>Add in red curry paste, milk, and coconut aminos and mix well over medium low heat",
+            "<strong>Step 9: </strong>Allow the coconut curry to simmer for a bit while meatballs cook then add cooked meatballs to the coconut curry (I like to let them simmer together for about 30-60 minutes if I can so the flavors are really well combined!)",
+            "<strong>Step 10: </strong>Garnish with cilantro and serve over your favorite rice, stir-fry noodles or zucchini noodles (anything!)"
+        ],
+        "ingredients": [
+            "1lb organic ground turkey (or sub ground chicken)",
+            "1 egg",
+            "1 cup gluten-free or grain-free cracker crumbs (crackers broken into breadcrumb-like pieces)",
+            "2 cloves garlic, minced",
+            "1 teaspoon ground ginger",
+            "1.5 tablespoon coconut aminos",
+            "1 tablespoon red curry paste (taste before adding to see how spicy!)",
+            "Sea salt and black pepper to taste",
+            "2 tablespoons avocado or olive oil",
+            "1 red bell pepper, sliced",
+            "1 small onion, diced",
+            "2 tablespoon red curry paste (taste before adding to see how spicy!)",
+            "1 - 13.5 ounce can full-fat coconut milk",
+            "1 tablespoon coconut aminos",
+            "Cilantro for garnish"
+        ]
     },
     {
         "recipeName": "Bibimbap",
-        "recipeImg": "images/bibimbap.webp",
-        "cookingSteps": "https://www.maangchi.com/recipe/bibimbap"
+        "recipeImg": "/images/bibimbap.webp",
+        "cookingSteps": [
+            "<strong>Step 1: </strong>Cut the beef into matchsticks and put them in a bowl.",
+            "<strong>Step 2: </strong>Mix with 1 tablespoon minced garlic, 1 tablespoon soy sauce, 1 tablespoon honey, 2 teaspoons toasted sesame oil, and 1 teaspoon sesame seeds with a spoon.",
+            "<strong>Step 3: </strong>Cover and keep in the fridge until ready to use.",
+            "<strong>Step 4: </strong>Heat up a pan over medium high heat. Squeeze out excess water from the carrot. Add a few drops of cooking oil to the pan and sauté the carrot for 1 minute. Put it on the platter next to the soy bean sprouts and spinach. Clean the pan with wet paper towel or wash it.",
+            "<strong>Step 5: </strong>Heat a few drops of cooking oil in the pan and squeeze out the excess water from the cucumber. Sauté with ½ teaspoon minced garlic and a few drops of toasted sesame oil for 30 seconds. Put it on the platter. Clean the pan.",
+            "<strong>Step 6: </strong>Heat up the pan with a few drops of cooking oil. Add the red bell pepper and sprinkle a pinch of salt over top. Sauté for 30 seconds. Put it on the platter. Clean the pan.",
+            "<strong>Step 7: </strong>Heat up the pan and squeeze out excess water from the zucchini. Add a few drops of cooking oil and sauté with 1 teaspoon minced garlic, 1 tablespoon chopped green onion, a drop of toasted sesame oil for 1 minute until slightly softened. Put it on the platter. Clean the pan.",
+            "<strong>Step 8: (Optional)</strong>Heat up the pan with a few drops of cooking oil. Add the bellflower roots and sauté for 2 to 3 minutes. Lower the heat to medium so as not to brown them. Add 1 teaspoon minced garlic and a drop of toasted sesame oil. Stir for another minute until a little softened. Put it on the platter. Clean the pan.",
+            "<strong>Step 9: (Optional)</strong>",
+            "<strong>Step 10: </strong>Serve by arranging the vegetables and beef on the rice. Top with a raw egg yolk and gochujang. If you prefer your eggs and beef cooked, use a fried egg sunny side up and pan-fry the beef before putting them on the top of rice."
+        ],
+        "ingredients": [
+            "5 cups cooked short-grain rice",
+            "12 ounces soy bean sprouts, washed and drained",
+            "8 ounces of spinach blanched and washed with the excess water squeezed out by hand",
+            "1 large carrot",
+            "1 large red bell pepper",
+            "1 large zucchini",
+            "1 English cucumber",
+            "3 to 4 green onions, chopped",
+            "½ pound fresh lean cut of beef (fillet mignon, flank steak)",
+            "4 ounces fernbrake (gosari), fresh or soaked from ½ ounce dried gosari - optional",
+            "1 ounce dried bellflower roots (doraji), soaked in cold water for 18 to 24 hours. - optional",
+            "4 eggs",
+            "kosher salt",
+            "vegetable oil",
+            "toasted sesame oil",
+            "toasted sesame seeds",
+            "garlic",
+            "soy sauce",
+            "honey (or sugar)",
+            "Korean hot pepper paste (gochujang)"
+        ]
     },
     {
         "recipeName": "Chicken Kale Bake",
-        "recipeImg": "images/kale-bake.webp",
-        "cookingSteps": "https://www.twopeasandtheirpod.com/sheet-pan-pasta-bake/#wprm-recipe-container-38912"
+        "recipeImg": "/images/kale-bake.webp",
+        "cookingSteps": [
+            "<strong>Step 1: </strong>Set a rack in the top third of the oven and preheat to 450 degrees F.",
+            "<strong>Step 2: </strong>Bring a pot of salty water to a boil and add the pasta. Cook the pasta until al dente.",
+            "<strong>Step 3: </strong>Meanwhile, mix the panko, 1/4 cup of the Parmesan cheese, 2 tablespoons of the olive oil, garlic powder, Italian seasoning, 1/4 teaspoon black pepper, and 1/4 teaspoon salt in a medium bowl and set aside.",
+            "<strong>Step 4: </strong>Toss the kale and tomatoes with 1/4 teaspoon salt and the remaining 2 tablespoons olive oil on a rimmed baking sheet.",
+            "<strong>Step 5: </strong>Reserve 1/2 cup of the pasta cooking water, then drain the pasta. Return the pasta to the pot along with the sour cream, Dijon mustard, 1 teaspoon salt, 1/4 cup pasta water, and the remaining 3/4 cup Parmesan cheese and 1/2 teaspoon black pepper; stir until smooth.",
+            "<strong>Step 6: </strong>Stir in the shredded chicken and 1 cup of the mozzarella, adding more pasta water to keep everything mixable if needed, until well combined. Transfer the mixture to the baking sheet with the kale and tomatoes. Toss to combine and spread everything in an even layer on the baking sheet. Top with the panko mixture and the remaining 1/2 cup mozzarella cheese.",
+            "<strong>Step 7: </strong>Place the pan in the oven and roast the pasta until the cheese is melted and the the top is lightly browned, about 5 to 7 minutes. Serve warm."
+        ],
+        "ingredients": [
+            "Kosher salt",
+            "12 ounces penne pasta",
+            "1 cup panko breadcrumbs",
+            "1 cup grated Parmesan cheese divided",
+            "4 tablespoons olive oil divided",
+            "1/2 teaspoon garlic powder",
+            "1/4 teaspoon Italian seasoning",
+            "3/4 teaspoon freshly ground black pepper divided",
+            "1 bunch curly kale ribs and stems removed, leaves torn into bite-size pieces",
+            "1 pint cherry tomatoes halved",
+            "1 cup sour cream or crème fraiche",
+            "1 tablespoon Dijon mustard",
+            "4 cups shredded rotisserie chicken",
+            "1 1/2 cups shredded mozzarella cheese divided"
+        ]
     },
     {
         "recipeName": "Flautas",
-        "recipeImg": "images/flautas.webp",
-        "cookingSteps": "https://docs.google.com/document/d/17LPp2n9TFXlBjKL4yhdPlJPA4FuEouea4pX6V1WRmig/edit?usp=sharing"
+        "recipeImg": "/images/flautas.webp",
+        "cookingSteps": [
+            "<strong>Step 1: </strong>Heat tortillas as directed on package. Meanwhile, in a small bowl, mix cheese, chicken and cumin",
+            "<strong>Step 1: </strong>Place about 1/4 cup chicken mixture on each warm tortilla. Top each with scant tbsp salsa. Roll up tightly and secure with toothpick. Brush filled tortillas with oil",
+            "<strong>Step 1: </strong>In 10-inch skillet, cook filled tortillas over medium heat 4-6 minutes, turning occasionally, until filling is hot and tortilla is toasted. Remove toothpics. Serve with guacamole and sour cream"
+        ],
+        "ingredients": [
+            "6 flour taco tortillas",
+            "1 cup finely shredded pepper jack cheese",
+            "3/4 cup shredded cooked chicken",
+            "3/4 tsp ground cumin",
+            "1/3 cup salsa",
+            "4 tsp vegetable oil",
+            "guacamole",
+            "sour cream"
+        ]
     },
     {
         "recipeName": "Bagels",
-        "recipeImg": "images/bagels.webp",
-        "cookingSteps": "https://www.sophisticatedgourmet.com/2009/10/new-york-style-bagel-recipe/"
+        "recipeImg": "/images/bagels.webp",
+        "cookingSteps": [
+            "<strong>Step 1: </strong>In 1/2 cup /120ml of the warm water, pour in the sugar and yeast. Do not stir. Let it sit for five minutes, and then stir the yeast and sugar mixture until it all dissolves in the water.",
+            "<strong>Step 2: </strong>Mix the flour and salt in a large bowl. Make a well in the middle and pour in the yeast and sugar mixture.",
+            "<strong>Step 3: </strong>Pour 1/3 cup / 80ml of warm water into the well. Mix and stir in the rest of the water (the scant 1/2 cup / 100ml that is remaining), as needed. Depending on where you live, you may need to add an additional couple tablespoons to about 1/4 cup/60ml of water. You want a moist and firm dough after you have mixed it.",
+            "<strong>Step 4: </strong>On a floured countertop, knead the dough for about 10 minutes until it is smooth and elastic. Try working in as much flour as possible to form a firm and stiff dough.",
+            "<strong>Step 5: </strong>Lightly brush a large bowl with oil and turn the dough to coat. Cover the bowl with a damp dish towel. Let rise in a warm place for 1 hour, until the dough has doubled in size. Punch the dough down, and let it rest for another 10 minutes.",
+            "<strong>Step 6: </strong>Carefully divide the dough into 8 pieces (I used a scale to be extra precise, but it's not necessary). Shape each piece into a round. Now, take a dough ball, and press it gently against the countertop (or whatever work surface you're using) moving your hand and the ball in a circular motion pulling the dough into itself while reducing the pressure on top of the dough slightly until a perfect dough ball forms (as pictured). Repeat with 7 other dough rounds.",
+            "<strong>Step 7: </strong>Coat a finger in flour, and gently press your finger into the center of each dough ball to form a ring. Stretch the ring to about 1/3 the diameter of the bagel and place on a lightly oiled cookie sheet. Repeat the same step with the remaining dough.",
+            "<strong>Step 8: </strong>After shaping the bagels and placing them on the cookie sheet, cover with a damp kitchen towel and allow to rest for 10 minutes. Meanwhile, preheat your oven to 425ºF / 220ºC / Gas Mark 7.",
+            "<strong>Step 9: </strong>Bring a large pot of water to a boil. Reduce the heat. Use a slotted spoon or skimmer to lower the bagels into the water. Boil as many as you are comfortable with boiling. Once the bagels are in, it shouldn't take too long for them to float to the top (a couple seconds). Let them sit there for 1 minute, and then flip them over to boil for another minute. Extend the boiling times to 2 minutes each, if you'd prefer a chewier bagel (results will give you a more New York-Style bagel with this option).",
+            "<strong>Step 10: </strong>If you want to add toppings to your bagels, do so as you take them out of the water. Alternatively, you can use an egg wash to get the toppings to stick before baking the bagels. You may want to use the “Optional Toppings” listed above to top the bagels. Use just one topping, or a combination to make your own Everything Bagel Seasoning.",
+            "<strong>Step 11: </strong>Once all the bagels have boiled (and have been topped with your choice of toppings), transfer them to an oiled or parchment-lined baking sheet.",
+            "<strong>Step 12: </strong>Bake for 20 - 25 minutes, or until golden brown.",
+            "<strong>Step 13: </strong>Cool on a wire rack before serving."
+        ],
+        "ingredients": [
+            "2 teaspoons / 6 g active dry yeast",
+            "4 1/2 teaspoons / 19 g granulated sugar",
+            "1 1/4 cups / 300 ml warm water (you may need ± 1/4 cup /60 ml more)",
+            "3 1/2 cups / 440 g bread flour or high gluten flour (you may need up to 1/2 cup / 60g for kneading)",
+            "1 1/2 teaspoons / 6 g salt"
+        ]
     },
     {
         "recipeName": "BBQ Chicken Tacos",
-        "recipeImg": "images/bbq-tacos.webp",
-        "cookingSteps": "https://www.twopeasandtheirpod.com/baked-bbq-chicken-tacos/#wprm-recipe-container-60298"
+        "recipeImg": "/images/bbq-tacos.webp",
+        "cookingSteps": [
+            "<strong>Step 1: </strong>Preheat oven to 400 degrees F. Line a 9x13-inch baking dish with parchment paper or grease with nonstick cooking spray. Place the taco shells in the prepared pan, standing up. Bake for 5 minutes so the shells can crisp up. Remove from the oven and set aside.",
+            "<strong>Step 2: </strong>In a large skillet, heat the olive oil over medium-high heat. Add the onion and cook for 3 minutes or until softened. Add the garlic and cook for one minute.",
+            "<strong>Step 3: </strong>Add the chicken and BBQ sauce and stir until the chicken is well coated in the sauce. Remove the skillet from the heat. Stir in 1 cup of the shredded cheese and the cilantro.",
+            "<strong>Step 4: </strong>Spoon the chicken mixture evenly into the shells. Sprinkle the remaining cheese on top of the tacos. You can prop them up against each other so they stand up.",
+            "<strong>Step 5: </strong>Bake for 7 to 10 minutes or until cheese is melted. Remove from the oven and top with cabbage, corn salsa, avocado or your favorite taco toppings!"
+        ],
+        "ingredients": [
+            "12 hard taco shells",
+            "1 tablespoon olive oil",
+            "1/3 cup chopped red onion",
+            "1 clove garlic, minced",
+            "3 cups shredded rotisserie chicken",
+            "1/2 cup BBQ sauce, can use store bought",
+            "2 cups shredded Mexican blend cheese, divided",
+            "1 tablespoon cilantro",
+            "Finely shredded purple cabbage",
+            "Corn Salsa",
+            "Avocado",
+            "Fresh cilantro"
+        ]
     },
     {
         "recipeName": "Instant Pot Risotto",
-        "recipeImg": "images/risotto.webp",
-        "cookingSteps": "https://40aprons.com/instant-pot-chicken-and-rice/#wprm-recipe-container-29497"
+        "recipeImg": "/images/risotto.webp",
+        "cookingSteps": [
+            "<strong>Step 1: </strong>Set Instant Pot to Sauté mode. Add 4 tablespoons unsalted butter to Instant Pot insert and let butter melt completely.",
+            "<strong>Step 2: </strong>When butter has melted, add 1 cup chopped white onion and 2 tablespoons minced fresh garlic to insert. Stir to incorporate, then sauté aromatics approximately 5 minutes or until onions are soft and translucent.",
+            "<strong>Step 3: </strong>Add 1 1/2 pounds boneless, skinless chicken breasts to insert. Sauté chicken pieces, stirring occasionally, approximately 5 minutes or until chicken pieces are opaque on all sides.",
+            "<strong>Step 4: </strong>Add 1 1/2 cups long-grain white rice, 3-4 cups chicken broth (3 cups for firmer rice; 4 cups for softer, soupier rice), and 2 tablespoons fresh lemon juice to Instant Pot insert. Stir to fully incorporate ingredients, making sure to scrape bottom of insert to loosen any stuck bits of onion or garlic.",
+            "<strong>Step 5: </strong>Secure lid on Instant Pot with valve in Sealing position. Set Instant Pot to Manual High Pressure mode and set cook time to 8 minutes. Instant Pot will pressurize and then 8-minute cook time will begin.",
+            "<strong>Step 6: </strong>When 8-minute cook time ends, Natural Release internal pressure 2 minutes. Note: Do not release pressure longer than 2 minutes or rice can overcook.",
+            "<strong>Step 7: </strong>After 2-minute Natural Release, carefully Quick Release any remaining pressure and remove lid. Use caution as any escaping steam will be incredibly hot.",
+            "<strong>Step 8: </strong>Stir chicken and rice mixture well. <strong>Note:</strong> If mixture contains excess standing liquid after pressure cooking, set Instant Pot to Sauté mode and stir mixture until excess liquid has fully incorporated into rice.",
+            "<strong>Step 9: </strong>Taste mixture and add 1 cup shredded fresh parmesan, 1 1/2 teaspoons salt, and 1/4 teaspoon black pepper. Stir until additions are well incorporated, then taste mixture again and add more parmesan, salt, pepper, or lemon juice if desired.",
+            "<strong>Step 10: </strong>When satisfied with flavor of chicken and rice mixture, portion mixture into preferred servings. Garnish with additional parmesan cheese if desired and serve warm."
+        ],
+        "ingredients": [
+            "4 tablespoons unsalted butter cut into small pieces",
+            "1 1/2 pounds boneless, skinless chicken breasts approximately 2-3 large chicken breasts, cut into bite-sized pieces",
+            "1 cup chopped white onion approximately 1 medium onion",
+            "2 tablespoons minced fresh garlic approximately 4 large cloves",
+            "1 1/2 cups long-grain white rice rinsed",
+            "3-4 cups chicken broth",
+            "2 tablespoons fresh lemon juice juice from approximately 1 large lemon",
+            "1 cup shredded fresh parmesan or grated, at room temperature",
+            "1 1/2 teaspoons salt more or less to taste",
+            "1/4 teaspoon black pepper more or less to taste"
+        ]
     }
 ]

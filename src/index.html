@@ -16,16 +16,22 @@
                 <li>Browse premade healthy meals with nutrition details included and save to meal calendar.</li>
                 <li>Search ingredient list and specific nutrition details.</li>
                 <li>Create and save custom meals and add to meal calendar</li>
-                <li id="register-list-item"><a id="register-button" href="account/account.html">Register Now</a></li>
+                <li id="register-list-item"><a id="register-button" href="login/login.html">Register Now</a></li>
             </ul>
             <figure id="hero-img">
                 <img src="images/veggie-rice.jpg" alt="veggie rice bowl" width="450px">
             </figure>
         </div>
         <div id="bottom-half-main">
-            <div id="recipe-carousel">
-                <h2>Recipe Carousel</h2>
-            </div>
+            
+            <div class="carousel-container">
+                <h2 id="carousel-header">Recipe Carousel</h2>
+                <div class="carousel-wrapper">
+                  <button id="prev-btn" class="carousel-arrow">❮</button>
+                  <div id="recipe-carousel" class="carousel-track"></div>
+                  <button id="next-btn" class="carousel-arrow">❯</button>
+                </div>
+              </div>              
             <div id="meal-diagram">
                 <h2>Custom Meal Diagram</h2>
                 <figure id="diagramImg">

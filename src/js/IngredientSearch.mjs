@@ -1,5 +1,8 @@
 const appId = import.meta.env.VITE_NIX_APP_ID
 const appKey = import.meta.env.VITE_NIX_APP_KEY
+console.log(appId)
+console.log(appKey)
+
 export async function searchIngredients() {
     const searchInput = document.getElementById("ingredient-search")
     const resultsDiv = document.getElementById("results")
