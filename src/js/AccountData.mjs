@@ -12,7 +12,7 @@ class AccountData {
     static getFormData() {
         const firstName = document.getElementById("account_firstname").value;
         const lastName = document.getElementById("account_lastname").value;
-        const email = document.getElementById("account_email").value;
+        const email = document.getElementById("account_email").value.toLowerCase();
         const password = document.getElementById("account_password").value;
 
         // Return an instance of the AccountData class
@@ -21,19 +21,30 @@ class AccountData {
 
     // Method to convert the object to JSON
     toJSON() {
-        return JSON.stringify({
+        return {
             firstName: this.firstName,
             lastName: this.lastName,
             email: this.email,
             password: this.password,
-            recipes: [{
-                name: "",
-                ingredients: [],
-                image: "",
-                steps: ""
-            }
-        ]
-        });
+            recipes: []
+        };
+    }
+
+    registerUser() {
+        // Get existing users or default to an empty array
+        const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
+
+        // Check if email is already used
+        const isEmailTaken = existingUsers.some(user => user.email === this.email);
+        if (isEmailTaken) {
+            throw new Error("An account with this email already exists.");
+        }
+
+        // Add this user
+        existingUsers.push(this.toJSON());
+
+        // Save back to localStorage
+        localStorage.setItem("users", JSON.stringify(existingUsers));
     }
 }
 

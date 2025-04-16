@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800;900&family=Pompiere&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --logo-font: "M PLUS Rounded 1c", sans-serif;
     --header-font: "Pompiere", sans-serif;
@@ -17,7 +19,7 @@
     display: flex;
     margin-bottom: 15px;
     padding-bottom: 10px;
-    border-bottom: solid 2px black;
+    border-bottom: solid 1.5px var(--green);
 }
 #logo h1 {
     font-family: var(--logo-font);
@@ -94,6 +96,7 @@ nav a{
 }
 #main-footer {
     font-family: var(--p-font);
+    color: var(--green);
 }
 #main-footer p {
     margin: 5px;
@@ -148,8 +151,16 @@ nav a{
     color: var(--blue);
     transition: transform 0.2s ease;
   }
+  .recipe-links {
+    text-decoration: none;
+  }
 
 /* Login page */
+#login-message {
+    font-family: var(--p-font);
+    color: red;
+    margin-left: 20px;
+}
 #login-header{
     font-family: var(--header-font);
     color: var(--blue);
@@ -160,6 +171,8 @@ nav a{
 #login-form, #register-form {
     display: grid;
 }
+
+
 #login-email, #login-password, #account_firstname, #account_lastname,
 #account_email, #account_password {
     margin: 10px;
@@ -196,8 +209,9 @@ nav a{
 
 #results {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 10px;
+    margin-top: 20px;
 }
 
 .result-item, .recipe-item {
@@ -309,6 +323,84 @@ nav a{
     overflow: hidden;
   }
 
+/* Mealbuilder page */
+#meal-builder {
+    justify-self: center;
+    margin-bottom: 30px;
+}
+#enter-meal-header, #enter-ing-header {
+    text-align: center;
+    font-family: var(--header-font);
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+#ingredient-name, #ingredient-quantity {
+width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+label {
+  font-family: var(--p-font);
+}
+#ingredient-list-container {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    justify-self: center;
+    font-family: var(--p-font);
+    border: solid 2px var(--brown);
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+#meal-card-buttons{
+    justify-self: center;
+    margin-top: 30px;
+}
+#nutrition-button, #save-button, #delete-button {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 8px 16px;
+    background-color: var(--blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+}
+#nutrition-button:hover, #save-button:hover, #delete-button:hover, 
+#add-ingredient-button:hover, #add-name-button:hover {
+    cursor: pointer;
+    background: var(--green);
+    transition: .2s;
+}
+#add-ingredient-button, #add-name-button {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+/* Account page */
+#select-saved-meal {
+    justify-self: center;
+    margin-bottom: 50px;
+    background-color: var(--blue);
+    padding: 30px 40px;
+    border-radius: 6px;
+}
+#saved-meal-header {
+    font-family: var(--header-font);
+    color: var(--blue);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
 /* DESKTOP VIEW */
 @media screen and (min-width: 970px) {
     nav a:hover{
@@ -344,5 +436,20 @@ nav a{
     #bottom-half-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* login page */
+    #login-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #login-form {
+        grid-template-rows: 20px 40px 50px;
+        border-right: 1.5px solid var(--blue);
+    }
+    #login-email, #login-password, #login-submit {
+        align-self: start;
+        height: 25px;
     }
 }

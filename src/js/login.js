@@ -4,51 +4,49 @@ import AccountData from "./AccountData.mjs";
 // Loads the header footer templates
 loadHeaderFooter();
 
+const params = new URLSearchParams(window.location.search);
+if (params.get("redirected")) {
+  document.getElementById("login-message").textContent = "♦️ Please log in to access that page";
+}
+
 // Add event listener to the registration form
-document.getElementById("register-form").addEventListener("submit", function(event) {
+document.getElementById("register-form").addEventListener("submit", async (event) => {
     event.preventDefault(); // Prevent the form from submitting traditionally
 
     // Get form data using the AccountData class
     const user = AccountData.getFormData();
 
-    // Create a JSON object with user data
-    const userJSON = user.toJSON();
-
-    // Store the user data in localStorage (use a unique key like 'user_data')
-    localStorage.setItem('user_data', userJSON);
-
-    // Optional: Notify the user registration is complete
-    alert('Account registered successfully!');
-    location.reload();
+    try {
+        user.registerUser();
+        alert("✅ Registration successful!");
+        window.location.href = "/login/login.html";
+    } catch (err) {
+        alert(`❗ ${err.message}`);
+    }
 });
 
 document.getElementById("login-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the form from submitting traditionally
+    event.preventDefault(); // Prevent form from submitting normally
 
-    // Get the email and password entered by the user
-    const loginEmail = document.getElementById("login-email").value;
+    const loginEmail = document.getElementById("login-email").value.toLowerCase();
     const loginPassword = document.getElementById("login-password").value;
 
-    // Retrieve the user data from localStorage
-    const storedUserData = localStorage.getItem('user_data');
-    
-    if (storedUserData) {
-        // Parse the stored user data
-        const storedUser = JSON.parse(storedUserData);
+    const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
 
-        // Check if the login credentials match
-        if (storedUser.email === loginEmail && storedUser.password === loginPassword) {
-            alert('Login successful!');
+    // Find a user with matching email and password
+    const matchedUser = storedUsers.find(user => 
+        user.email === loginEmail && user.password === loginPassword
+    );
 
-            // Set the 'isLoggedIn' flag to true
-            localStorage.setItem('isLoggedIn', 'true');
+    if (matchedUser) {
+        alert('Login successful!');
 
-            // Redirect to the account page or home page
-            window.location.href = "/account/account.html";
-        } else {
-            alert('Invalid email or password');
-        }
+        // Save session info (you could store more here if needed)
+        localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('currentUser', JSON.stringify(matchedUser));
+
+        window.location.href = "/account/account.html";
     } else {
-        alert('No user data found. Please register first.');
+        alert('Invalid email or password');
     }
 });

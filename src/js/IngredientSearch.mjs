@@ -1,3 +1,5 @@
+import { capitalizeFirstLetter } from "./utils.mjs"
+
 const appId = import.meta.env.VITE_NIX_APP_ID
 const appKey = import.meta.env.VITE_NIX_APP_KEY
 console.log(appId)
@@ -25,7 +27,7 @@ export async function searchIngredients() {
     resultsDiv.innerHTML = foods.map(item => `
         <div class="result-item" data-food-name="${item.food_name}">
           <img src="${item.photo.thumb}" alt="${item.food_name}" />
-          <span>${item.food_name}</span>
+          <span>${capitalizeFirstLetter(item.food_name)}</span>
         </div>
       `).join("")
   

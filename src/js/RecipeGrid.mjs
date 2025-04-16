@@ -60,6 +60,11 @@ export async function loadAndRenderRecipes() {
     // Cooking Steps
     const stepsContainer = document.getElementById("modal-steps");
     stepsContainer.innerHTML = recipe.cookingSteps.map(step => `<p>${step}</p>`).join("");
+
+    // Nutrition facts
+    const nutritionContainer = document.getElementById("modal-nutrition");
+    nutritionContainer.innerHTML = `<p>Loading nutrition facts...</p>`;
+    showNutritionFacts(recipe.ingredients, nutritionContainer);
   
     // Show modal
     document.getElementById("recipe-modal").classList.remove("hidden");
@@ -78,9 +83,10 @@ export async function loadAndRenderRecipes() {
       card.className = "carousel-card";
   
       card.innerHTML = `
+      <a class="recipe-links" href="recipes/recipes.html">
         <img src="${recipe.recipeImg}" alt="${recipe.recipeName}" class="carousel-img">
-        <h4>${recipe.recipeName}</h4>`;
-  
+        <h4>${recipe.recipeName}</h4>
+      </a>`;
       carousel.appendChild(card);
     });
 }
@@ -100,3 +106,39 @@ export async function loadAndRenderRecipes() {
       carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
     });
   }
+
+const appId = import.meta.env.VITE_NIX_APP_ID;
+const appKey = import.meta.env.VITE_NIX_APP_KEY;
+
+async function showNutritionFacts(ingredientsList) {
+  try {
+    const query = ingredientsList.join(", ");
+    const response = await fetch("https://trackapi.nutritionix.com/v2/natural/nutrients", {
+      method: "POST",
+      headers: {
+        "x-app-id": appId,
+        "x-app-key": appKey,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ query }),
+    });
+
+    const data = await response.json();
+    const food = data.foods[0]; // Optional: loop through all if needed
+
+    const nutritionContainer = document.getElementById("modal-nutrition");
+    nutritionContainer.innerHTML = `
+      <h4>Nutrition Facts</h4>
+      <p><strong>Calories:</strong> ${food.nf_calories}</p>
+      <p><strong>Protein:</strong> ${food.nf_protein}g</p>
+      <p><strong>Carbs:</strong> ${food.nf_total_carbohydrate}g</p>
+      <p><strong>Fat:</strong> ${food.nf_total_fat}g</p>
+    `;
+
+    // Show modal if it's separate or scroll into view if shared
+    nutritionContainer.scrollIntoView({ behavior: "smooth" });
+
+  } catch (err) {
+    console.error("NutritionIX API error:", err);
+  }
+}

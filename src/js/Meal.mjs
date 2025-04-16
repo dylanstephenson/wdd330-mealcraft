@@ -1,14 +1,38 @@
 // Class for building meal
-
+import { capitalizeFirstLetter } from "./utils.mjs";
 class Meal {
-    constructor() {
-        this.ingredients = [];
-        this.name = "";
+    constructor(initialData = {}) {
+        this.id = initialData.id || Date.now().toString();
+        this.ingredients = initialData.ingredients || [];
+        this.name = initialData.name || "";
+        this.appId = import.meta.env.VITE_NIX_APP_ID;
+        this.appKey = import.meta.env.VITE_NIX_APP_KEY;
     }
 
     init() {
         this.setupMealNameInput();
         this.getIngredients();
+        this.populateUI();
+        this.updateIngredientList();
+    }
+
+    populateUI() {
+        console.log("populateUI is called with name:", this.name, "and ingredients:", this.ingredients);
+        if (this.name) {
+            document.getElementById("meal-name-container").style.display = "none";
+            document.getElementById("ingredient-container").style.display = "block";
+            document.getElementById("meal-card-name").textContent = capitalizeFirstLetter(this.name);
+        }
+        if (this.ingredients.length > 0) {
+            const ingredientList = document.getElementById("ingredient-list");
+            ingredientList.innerHTML = '';
+            this.ingredients.forEach(ingredient => {
+              const li = document.createElement("li");
+              li.textContent = `${ingredient}`;
+              ingredientList.appendChild(li);
+            });
+            document.getElementById("ingredient-list-container").style.display = "block";
+        }
     }
 
     // Handle the meal name input and transition
@@ -26,46 +50,56 @@ class Meal {
             document.getElementById("ingredient-container").style.display = "block";
 
             // Set the meal name on the ingredient card
-            document.getElementById("meal-card-name").textContent = this.name;
+            document.getElementById("meal-card-name").textContent = capitalizeFirstLetter(this.name);
         });
     }
 
     // Handle adding ingredients
     getIngredients() {
         const ingredientForm = document.getElementById("ingredient-form");
+        console.log("ingredientForm:", ingredientForm)
 
         ingredientForm.addEventListener("submit", (event) => {
-            event.preventDefault();
+          event.preventDefault();
+      
+          const ingredientName = document.getElementById("ingredient-name").value.trim();
+          const ingredientQuantity = document.getElementById("ingredient-quantity").value.trim();
+            
 
-            const ingredientName = document.getElementById("ingredient-name").value;
-            const ingredientQuantity = document.getElementById("ingredient-quantity").value;
-
-            // Add ingredient to the ingredients array
-            this.ingredients.push({ name: ingredientName, quantity: ingredientQuantity });
-
-            // Update the ingredient list UI
-            this.updateIngredientList();
-
-            // Clear input fields
-            document.getElementById("ingredient-name").value = '';
-            document.getElementById("ingredient-quantity").value = '';
+          if (!ingredientName || !ingredientQuantity) {
+            alert("Please enter both the ingredient name and quantity.");
+            return;
+          }
+      
+          // Push an object with both properties
+          this.ingredients.push({ name: ingredientName, quantity: ingredientQuantity });
+          console.log("New ingredient added:", { name: ingredientName, quantity: ingredientQuantity });
+          
+          // Update the ingredient list UI after adding
+          this.updateIngredientList();
+      
+          // Clear input fields
+          document.getElementById("ingredient-name").value = '';
+          document.getElementById("ingredient-quantity").value = '';
         });
-    }
+      }
 
     // Update the ingredient list on the page
     updateIngredientList() {
         const ingredientList = document.getElementById("ingredient-list");
         ingredientList.innerHTML = '';
-
+      
         this.ingredients.forEach(ingredient => {
-            const listItem = document.createElement("li");
-            listItem.textContent = `${ingredient.quantity} ${ingredient.name}`;
-            ingredientList.appendChild(listItem);
+          const { name, quantity } = ingredient;
+      
+          const listItem = document.createElement("li");
+          listItem.textContent = name && quantity ? `${quantity} ${name}` : "Invalid ingredient";
+          ingredientList.appendChild(listItem);
         });
-
-        // Show the ingredient card once ingredients are added
+      
         document.getElementById("ingredient-list-container").style.display = "block";
-    }
+      }
 }
+
 
 export default Meal;

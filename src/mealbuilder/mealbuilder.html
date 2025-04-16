@@ -13,22 +13,22 @@
         <div id="meal-builder">
             <!-- Meal Name Input -->
             <div id="meal-name-container">
-                <h2>Enter Meal Name</h2>
+                <h2 id="enter-meal-header">Enter Meal Name</h2>
                 <form id="meal-name-form">
                     <input type="text" id="meal-name" placeholder="Meal Name" required>
-                    <button type="submit">Submit</button>
+                    <button id="add-name-button" type="submit">Submit</button>
                 </form>
             </div>
     
             <!-- Ingredient Input (Initially hidden) -->
             <div id="ingredient-container" style="display: none;">
-                <h3>Enter Ingredients</h3>
+                <h3 id="enter-ing-header">Enter Ingredients</h3>
                 <form id="ingredient-form">
                     <label for="ingredient-name">Ingredient Name:</label>
                     <input type="text" id="ingredient-name" name="ingredient-name" placeholder="e.g. Apple" required>
                     <label for="ingredient-quantity">Quantity:</label>
                     <input type="text" id="ingredient-quantity" name="ingredient-quantity" placeholder="Quantity (e.g. 2lbs)" required>
-                    <button type="submit">Add Ingredient</button>
+                    <button id="add-ingredient-button" type="submit">Add Ingredient</button>
                 </form>
     
                 <!-- Ingredient List -->
@@ -38,10 +38,22 @@
                         <ul id="ingredient-list">
                             <!-- Ingredients will appear here -->
                         </ul>
+                        <div id="meal-card-buttons">
+                            <button id="nutrition-button">Nutrition</button>
+                            <button id="save-button">Save</button>
+                            <button id="delete-button">Delete</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="nutrition-modal" class="modal hidden">
+            <div class="modal-content">
+              <span id="close-nutrition-modal" class="close">&times;</span>
+              <h3>Nutrition Information</h3>
+              <div id="nutrition-details"></div>
+            </div>
+          </div>
     </main>
     <footer class="divider" id="main-footer"></footer>
 </body>
